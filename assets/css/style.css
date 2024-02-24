@@ -85,7 +85,7 @@ main {
     flex-direction: column;
 }
 
-/*Hero sectio*/
+/*Hero section*/
 #hero {
     height: 600px;
     width: 100%;
@@ -98,7 +98,7 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-    
+
 }
 
 /* Footer */
