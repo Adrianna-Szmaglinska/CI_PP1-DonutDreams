@@ -1,1 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap');
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    padding: 0 1rem;
+    position: fixed; /* will be making this sticky later */
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #ff00ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1rem;
+}
+
+.active {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #ff00ff;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
