@@ -46,7 +46,7 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ff00ff;
 }
 
 /* Navbar */
@@ -72,4 +72,30 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+}
+
+/* Main content */
+main {
+    /*Enlarge main element to push footer down */
+    flex: 1 0 auto;
+    /*Add margin at the top to prevent content from being covered by header */
+    margin-top: 47px;
+    /*Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #000000;
 }
