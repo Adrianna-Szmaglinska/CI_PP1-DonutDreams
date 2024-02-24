@@ -29,9 +29,9 @@
         </label>
         <nav>
             <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="index.html" aria-label="Homepage">Home</a></li>
+                <li><a href="menu.html" aria-label="Menu">Menu</a></li>
+                <li><a href="signup.html" aria-label="Sign Up Page">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -39,9 +39,16 @@
     <main>
     <!--Section 1-->
     <section id="hero">
-        <div id="cover-text">
-            <h2>Donut Dreams</h2>
-            <h3>Hottest new donut shop in Galway, enjoy delicious donuts and your favourite arcade games!</h3>
+        <!--Image container-->
+        <div id="hero-image"></div>
+        <!--Text Container-->
+        <div id="hero-text">
+            <p>Welcome to the newest and hottest donut shop in Galway. 
+                Enjoy old-school arcade games and delicious donuts.
+            </p>
+            <p>
+                Record-setters and speed-runners will receive a FREE donut of choice for every record set in-store.
+            </p>
         </div>
     </section>
     <!--Section 2-->
@@ -59,9 +66,9 @@
                     <i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener"
-                    aria-label="Join us on Twitter (opens in new tab)">
-                    <i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.x.com" target="_blank" rel="noopener"
+                    aria-label="Join us on X (opens in new tab)">
+                    <i class="fa-brands fa-square-x-twitter"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com" target="_blank" rel="noopener"
@@ -74,6 +81,7 @@
                     <i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
+        <p>Developed by [placeholder] | Code Institute Project 1 | 2024</p>
     </footer>
 
     <!--Font Awesome kit-->
