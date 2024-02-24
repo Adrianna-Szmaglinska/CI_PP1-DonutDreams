@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -48,7 +48,7 @@ header a {
 }
 
 #menu {
-    font-size: 100%;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
     float: right;
@@ -97,10 +97,23 @@ main {
 
 /*Hero section*/
 #hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/center;
-    position: relative;
+    max-width: 80%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#hero p {
+    padding: 15px;
+}
+
+#hero-image {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.2), #000000), url("../images/hero-image.webp");
+    width: 600px;
+    height: 324px;
+    max-width: 600px;
 }
 
 #hero-text {
@@ -115,11 +128,11 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2 {
+#hero-text > h2 {
     color: #000000;
 }
 
-#cover-text > h3 {
+#hero-text > h3 {
     color: #000000;
     font-family: 'Outfit', sans-serif;
 }
